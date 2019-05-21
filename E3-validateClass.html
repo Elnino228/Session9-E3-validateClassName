@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isClassName(str) {
+        let regexp=/^[ACP][0-9]{4}[GHIKLM]$/;
+        if (regexp.test(str)){
+            console.log(true);
+        } else console.log(false);
+    }
+    isClassName('C0419G');
+    isClassName('A0419G');
+    isClassName('P0419G');
+    isClassName('C0419M');
+    isClassName('C0419I');
+    isClassName('B0419G');
+    isClassName('C0419T');
+    isClassName('C04195G');
+</script>
+</body>
+</html>
